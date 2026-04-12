@@ -1,208 +1,226 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Prologue by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Helen</title>
 
-		<!-- Header -->
-			<div id="header">
+  <!-- Bulma CSS (same framework as Nerfies) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Google Fonts: same family as Nerfies -->
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
 
-				<div class="top">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
-						</div>
+  <!-- ===================================================
+       NAVBAR
+  ==================================================== -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item site-name" href="#">Helen</a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about">About</a>
+          <a class="navbar-item" href="#projects">Projects</a>
+          <a class="navbar-item" href="#cv">CV</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+  <!-- ===================================================
+       BIO / ABOUT SECTION
+  ==================================================== -->
+  <section class="section bio-section" id="about">
+    <div class="container is-max-desktop">
+      <div class="columns is-vcentered">
 
-				</div>
+        <!-- Photo -->
+        <div class="column is-narrow has-text-centered">
+          <figure class="image bio-photo">
+            <!-- Replace with your actual photo -->
+            <img class="is-rounded" src="images/headshot.jpg" alt="Helen"/>
+          </figure>
+        </div>
 
-				<div class="bottom">
+        <!-- Bio text -->
+        <div class="column bio-text">
+          <h1 class="title is-2 bio-name">Hi, I'm Helen 👋</h1>
+          <p class="subtitle is-5 bio-role">PhD Researcher in Robotics &amp; Machine Learning</p>
+          <p class="bio-desc">
+            My research focuses on robot learning and foundational models.
+          </p>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+          <!-- Social / external links -->
+          <div class="bio-links mt-4">
+            <a class="bio-link" href="https://scholar.google.com" target="_blank">
+              <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+              <span>Google Scholar</span>
+            </a>
+			<a class="bio-link" href="https://www.linkedin.com/in/yourusername" target="_blank">
+              <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="bio-link" href="mailto:you@university.edu">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
 
-				</div>
+      </div>
+    </div>
+  </section>
 
-			</div>
+  <hr class="section-divider"/>
 
-		<!-- Main -->
-			<div id="main">
+  <!-- ===================================================
+       RESEARCH PROJECTS
+  ==================================================== -->
+  <section class="section" id="projects">
+    <div class="container is-max-widescreen">
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+      <h2 class="section-heading">Research Projects</h2>
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
-							</header>
+      <div class="columns is-multiline project-grid">
 
-							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-							</footer>
+        <!-- ── PROJECT CARD 1 ── -->
+        <!-- href → your Nerfies page URL                        -->
+        <!-- img src → snapshot in static/images/ (.png or .gif) -->
+        <div class="column is-4-desktop is-6-tablet">
+          <article class="project-card card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="images/pic03.jpg" alt="Project 1"/>
+              </figure>
+              <div class="project-summary">
+                <div class="tags mb-2">
+                  <span class="tag is-link is-light">CVPR 2025</span>
+                  <span class="tag is-success is-light">Robotics</span>
+                </div>
+                <p class="title is-5 card-title">Your Project Title Here</p>
+              </div>
+              <a class="card-hover-overlay" href="https://yourusername.github.io/project1" target="_blank" aria-label="View Project 1">
+                <span>View Project &rarr;</span>
+              </a>
+            </div>
+            <div class="card-content">
+              <p class="card-desc">One or two sentences describing what this project does and why it matters.</p>
+              <div class="publication-links mt-3">
+                <a class="pub-link" href="#">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+                </a>
+                <a class="pub-link" href="#">
+                  <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+                </a>
+                <a class="pub-link" href="#">
+                  <span class="icon"><i class="fas fa-globe"></i></span><span>Page</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-						</div>
-					</section>
+        <!-- ── PROJECT CARD 2 ── -->
+        <div class="column is-4-desktop is-6-tablet">
+          <article class="project-card card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="images/pic04.jpg" alt="Project 2"/>
+              </figure>
+              <div class="project-summary">
+                <div class="tags mb-2">
+                  <span class="tag is-link is-light">NeurIPS 2024</span>
+                  <span class="tag is-warning is-light">Learning</span>
+                </div>
+                <p class="title is-5 card-title">Your Second Project Title</p>
+              </div>
+              <a class="card-hover-overlay" href="https://yourusername.github.io/project2" target="_blank" aria-label="View Project 2">
+                <span>View Project &rarr;</span>
+              </a>
+            </div>
+            <div class="card-content">
+              <p class="card-desc">One or two sentences describing what this project does and why it matters.</p>
+              <div class="publication-links mt-3">
+                <a class="pub-link" href="#">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+                </a>
+                <a class="pub-link" href="#">
+                  <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+                </a>
+                <a class="pub-link" href="#">
+                  <span class="icon"><i class="fas fa-globe"></i></span><span>Page</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+        <!-- ── PROJECT CARD 3 ── -->
+        <div class="column is-4-desktop is-6-tablet">
+          <article class="project-card card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="images/pic05.jpg" alt="Project 3"/>
+              </figure>
+              <div class="project-summary">
+                <div class="tags mb-2">
+                  <span class="tag is-link is-light">ICRA 2024</span>
+                  <span class="tag is-danger is-light">Manipulation</span>
+                </div>
+                <p class="title is-5 card-title">Your Third Project Title</p>
+              </div>
+              <a class="card-hover-overlay" href="https://yourusername.github.io/project3" target="_blank" aria-label="View Project 3">
+                <span>View Project &rarr;</span>
+              </a>
+            </div>
+            <div class="card-content">
+              <p class="card-desc">One or two sentences describing what this project does and why it matters.</p>
+              <div class="publication-links mt-3">
+                <a class="pub-link" href="#">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+                </a>
+                <a class="pub-link" href="#">
+                  <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+                </a>
+                <a class="pub-link" href="#">
+                  <span class="icon"><i class="fas fa-globe"></i></span><span>Page</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-							<header>
-								<h2>Portfolio</h2>
-							</header>
+        <!-- ── COPY A CARD BLOCK ABOVE TO ADD MORE ── -->
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+      </div>
+    </div>
+  </section>
 
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
+  <!-- ===================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="footer" id="cv">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#" class="footer-link">
+          <span class="icon"><i class="fas fa-newspaper"></i></span>
+          <span>Publications</span>
+        </a>
+        <span class="footer-sep">·</span>
+        <a href="mailto:you@university.edu" class="footer-link">
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
