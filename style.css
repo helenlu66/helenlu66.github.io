@@ -415,14 +415,13 @@ body {
 /* Keep research figures fully visible, with titles below the previews. */
 .project-preview { display: block; border-bottom: 1px solid #ededed; }
 .project-card .project-preview figure { background: #fff; padding-top: 0; }
-.project-card .project-preview figure img { object-fit: contain; padding: 0.75rem; }
+.project-card .project-preview figure img { object-fit: contain; padding: 0.25rem; }
 .project-card .card-title a { color: inherit; }
 .project-card .card-title a:hover { color: #3273dc; }
 .project-card .card-title { font-size: 1.05rem; margin-bottom: 0.65rem !important; }
 a:focus-visible { outline: 3px solid #3273dc; outline-offset: 3px; }
 .project-preview:focus-visible { outline-offset: -3px; }
 
-.preview-toggle[hidden] { display: none; }
 .project-card .animated-preview img { padding: 0; }
 .preview-caption {
   position: absolute;

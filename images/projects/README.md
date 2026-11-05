@@ -19,11 +19,11 @@ Paper figures were cropped to exclude surrounding text. Previews were resized an
 
 ## Animated previews
 
-GIFs use real project footage; the JPEGs remain as static fallbacks. A page control pauses all previews, and reduced-motion preferences show stills by default.
+GIFs use real project footage; the JPEGs remain as static fallbacks. Reduced-motion preferences show stills by default. Only the MultiNet maze and tactile-sorting cards use GIFs; the hybrid-planning and Price Is Not Right cards use still figures.
 
 | GIF | Source | Processing |
 | --- | --- | --- |
 | hybrid-planning.gif | https://helenlu66.github.io/hybridLLMguided/static/videos/pick-up-lid-from-pot.mp4 | Full 3.75-second clip, original speed, 360 px wide, 10 fps |
 | price-not-right.gif | https://price-is-not-right.github.io/static/videos/nsm-hanoi.mp4 | Full demo at 8x speed, 360 px wide, 8 fps |
 | multinet-v2.gif | https://multinet.ai/static/videos/r1_reels/r1_M3_8x8_corridor_kr_sg_1__opus48_FAIL.mp4 | Recorded failure episode at 3x speed, 480 px wide, 10 fps |
-| texture-sort.gif | https://raw.githubusercontent.com/helenlu66/texture_sort/main/demo/tactile_classification_phase.webp | Trimmed to the robot camera segment (source frames 104-454), cropped to robot camera view, approximately 4x speed, 320 px wide |
+| texture-sort.gif | https://raw.githubusercontent.com/helenlu66/texture_sort/main/demo/tactile_classification_phase.webp | Source frames 220-320, with the GelSight tactile image and robot camera shown side by side; approximately 2x speed, 640 px wide. The static fallback shows tactile contact at source frame 280. |
