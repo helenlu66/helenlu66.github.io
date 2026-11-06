@@ -19,7 +19,7 @@ Paper figures were cropped to exclude surrounding text. Previews were resized an
 
 ## Animated previews
 
-GIFs use real project footage; the JPEGs remain as static fallbacks. Reduced-motion preferences show stills by default. Only the MultiNet maze and tactile-sorting cards use GIFs; the hybrid-planning and Price Is Not Right cards use still figures.
+GIFs use real project footage; the JPEGs remain as static fallbacks. Reduced-motion preferences show stills by default. Animated cards retain matching stills for reduced-motion preferences.
 
 | GIF | Source | Processing |
 | --- | --- | --- |
@@ -39,3 +39,7 @@ GIFs use real project footage; the JPEGs remain as static fallbacks. Reduced-mot
 `vla-tug-mushroom.gif` and its JPEG fallback use synchronized external (`/cameras/925622071555`) and wrist (`/cameras/onboard`) camera frames from the user-provided `mushroom_steer_probe.rrd`. The preview includes the failure prediction (93.2%, 1.317 s), all five logged corrective nudges (+Y 6.49 s, -Z 9.87 s, -Z 13.56 s, -X 16.94 s, +X 19.25 s), policy restart (25.65 s), and grasp/placement. Camera sampling is sparse while paused; recorded nudge frames are retained, waits between corrections are shortened and explicitly labeled, and recording timestamps remain visible. No missing motion is synthesized. Output: 800 × 450, 10 fps.
 
 The mushroom preview displays the user-confirmed instruction “Task: Put the mushroom on the plate” throughout playback.
+
+`hybrid-robot-montage.gif` and its JPEG fallback use the five task videos from https://helenlu66.github.io/hybridLLMguided/. Task labels are copied verbatim from the webpage captions, in order: “Pick up lid from pot”, “Pick up from open box”, “Pick up nut from peg”, “Open drawer”, and “Pick up from open drawer”.
+
+`price-comparison.gif` and its JPEG fallback compare the complete `pi0-hanoi-end-to-end.mp4` and `nsm-hanoi.mp4` demos from https://price-is-not-right.github.io/static/videos/. Both play at 4× speed; the shorter neuro-symbolic demo holds its last frame. Method labels are copied from the webpage (“End-to-End VLA”, “Neuro-Symbolic Method”); “Play Towers of Hanoi” comes from the original `e2e-vla.en.vtt` subtitle. Output: 800 × 450 at 10 fps. No outcomes or energy figures are added to the footage.
