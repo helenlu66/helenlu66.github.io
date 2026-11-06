@@ -37,3 +37,5 @@ GIFs use real project footage; the JPEGs remain as static fallbacks. Reduced-mot
 `vla-tug.gif` uses the first 10 seconds of the agent and wrist videos at https://vla-tug.github.io/media/rollouts/ep2/ (640 × 360, 10 fps). The monitoring/alarm label follows the episode metadata: alarm step 11 × 0.4 seconds = 4.4 seconds, wrong-object failure. `vla-tug-demo.jpg` is its reduced-motion fallback.
 
 `vla-tug-mushroom.gif` and its JPEG fallback use synchronized external (`/cameras/925622071555`) and wrist (`/cameras/onboard`) camera frames from the user-provided `mushroom_steer_probe.rrd`. The preview includes the failure prediction (93.2%, 1.317 s), all five logged corrective nudges (+Y 6.49 s, -Z 9.87 s, -Z 13.56 s, -X 16.94 s, +X 19.25 s), policy restart (25.65 s), and grasp/placement. Camera sampling is sparse while paused; recorded nudge frames are retained, waits between corrections are shortened and explicitly labeled, and recording timestamps remain visible. No missing motion is synthesized. Output: 800 × 450, 10 fps.
+
+The mushroom preview displays the user-confirmed instruction “Task: Put the mushroom on the plate” throughout playback.
