@@ -434,3 +434,12 @@ a:focus-visible { outline: 3px solid #3273dc; outline-offset: 3px; }
   font-size: 0.65rem;
   pointer-events: none;
 }
+
+/* Keep the task dialogue fully visible, including while hovering. */
+.project-card .card-image .dialogue-preview img {
+  object-fit: contain;
+}
+
+.project-card:hover .card-image .dialogue-preview img {
+  transform: none;
+}

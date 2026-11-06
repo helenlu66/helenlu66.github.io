@@ -27,3 +27,7 @@ GIFs use real project footage; the JPEGs remain as static fallbacks. Reduced-mot
 | price-not-right.gif | https://price-is-not-right.github.io/static/videos/nsm-hanoi.mp4 | Full demo at 8x speed, 360 px wide, 8 fps |
 | multinet-v2.gif | https://multinet.ai/static/videos/r1_reels/r1_M3_8x8_corridor_kr_sg_1__opus48_FAIL.mp4 | Recorded failure episode at 3x speed, 480 px wide, 10 fps |
 | texture-sort.gif | https://raw.githubusercontent.com/helenlu66/texture_sort/main/demo/tactile_classification_phase.webp | Source frames 220-320, with the GelSight tactile image and robot camera shown side by side; approximately 2x speed, 640 px wide. The static fallback shows tactile contact at source frame 280. |
+
+### Co-creative dialogue and placement preview
+
+`cake-dialogue-placement.gif` and its matching JPEG use 48.0–58.7 seconds of the original `cake_decoration_demo_iros.mp4` (Cake Decoration Files). The robot picks up the mint macaron and places it at a3 in response to the human's correction. The relevant robot suggestion and human reply are retained at full width above the robot view. The 800 × 450 GIF runs at 10 fps, with a short final-frame hold; the card disables hover zoom to preserve the dialogue edges. The JPEG is the reduced-motion fallback.
